@@ -48,7 +48,7 @@ module.exports = function (req, res, url) {
 					storePath: process.env.STORE_URL + "/<store>",
 					clientThemePath: process.env.CLIENT_URL + "/<client_theme>",
 					original_asset_id: query["id"] || null,
-					themeId: "business",
+					themeId: "family",
 					ut: 60,
 					bs: "default",
 					appCode: "go",
@@ -61,7 +61,7 @@ module.exports = function (req, res, url) {
 					tlang: "en_US",
 				},
 				allowScriptAccess: "always",
-				movie: process.env.SWF_URL + "/cc.swf", // 'http://localhost/cc.swf'
+				movie: process.env.SWF_URL + "/cc.swf", // 'cc.swf'
 			};
 			break;
 		}
@@ -94,7 +94,7 @@ module.exports = function (req, res, url) {
 					lid: 13,
 				},
 				allowScriptAccess: "always",
-				movie: process.env.SWF_URL + "/cc_browser.swf", // 'http://localhost/cc_browser.swf'
+				movie: process.env.SWF_URL + "/cc_browser.swf", // 'cc_browser.swf'
 			};
 			break;
 		}
@@ -117,22 +117,28 @@ module.exports = function (req, res, url) {
 					storePath: process.env.STORE_URL + "/<store>",
 					isEmbed: 1,
 					ctc: "go",
-					ut: 50,
+					ut: 30,
 					bs: "default",
+					userId: 2152,
+			                m_mode: "Y",
 					appCode: "go",
 					page: "",
 					siteId: "go",
 					lid: 13,
 					isLogin: "Y",
-					retut: 1,
+					retut: 0,
 					clientThemePath: process.env.CLIENT_URL + "/<client_theme>",
-					themeId: "business",
+					themeId: "custom",
+					tray: "custom",
 					tlang: "en_US",
 					presaveId: presave,
-					goteam_draft_only: 1,
+					goteam_draft_only: 0,
 					isWide: 1,
 					collab: 0,
-					nextUrl: "/html/list.html",
+					movieLid: 10,
+			                has_asset_char: "0",
+					nextUrl: "/pages/html/list.html",
+					tutorial: 1,
 				},
 				allowScriptAccess: "always",
 			};
@@ -151,8 +157,10 @@ module.exports = function (req, res, url) {
 				flashvars: {
 					apiserver: "/",
 					storePath: process.env.STORE_URL + "/<store>",
-					ut: 60,
-					autostart: 1,
+					ut: 30,
+					thumbnailURL: "/movie_thumbs/${mId}.png",
+					isEmbed: 1,
+					autostart: 0,
 					isWide: 1,
 					clientThemePath: process.env.CLIENT_URL + "/<client_theme>",
 				},
