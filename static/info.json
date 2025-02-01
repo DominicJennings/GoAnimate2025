@@ -2,14 +2,14 @@
 	"GET": {
 		"/index.html": {
 			"headers": {
-				"Location": "/pages/html/list.html"
+				"Location": "pages/html/list.html"
 			},
 			"statusCode": 302,
 			"content": ""
 		},
 		"/$": {
 			"headers": {
-				"Location": "/pages/html/list.html"
+				"Location": "pages/html/list.html"
 			},
 			"statusCode": 302,
 			"content": ""
@@ -47,7 +47,59 @@
 			"headers": {
 				"Content-Type": "text/html; charset=UTF-8"
 			}
-		}
+		},
+		"/pages/html/([^?]+html).*": {
+			"contentReplace": true,
+			"regexLink": "pages/html/$1",
+			"headers": {
+				"Content-Type": "text/html; charset=UTF-8"
+			}
+		},
+		"/pages/html/([^?]+).*": {
+			"regexLink": "pages/html/$1",
+			"headers": {
+				"Content-Type": "text/html; charset=UTF-8"
+			}
+		},
+		"/pages/css/([^?]+css).*": {
+			"contentReplace": true,
+			"regexLink": "/pages/css/$1",
+			"headers": {
+				"Content-Type": "text/css; charset=UTF-8"
+			}
+		},
+		"/pages/css/([^?]+).*": {
+			"regexLink": "/pages/css/$1",
+			"headers": {
+				"Content-Type": "text/css; charset=UTF-8"
+			}
+		},
+		"/pages/fonts/([^?]+).*": {
+			"regexLink": "/pages/fonts/$1",
+			"headers": {
+				"Content-Type": "application/font-woff; charset=UTF-8"
+			}
+		},
+		"pages/img/(.*)(png|PNG)$": {
+			"headers": {
+				"Content-Type": "image/png"
+			}
+		},
+		"pages/img/(.*)(jpg|JPG|jpeg|JPEG)$": {
+			"headers": {
+				"Content-Type": "image/jpeg"
+			}
+		},
+		"pages/img/(.*)(svg|SVG)$": {
+			"headers": {
+				"Content-Type": "image/svg+xml; charset=UTF-8"
+			}
+		},
+		"pages/js/(.*)(js|JS)$": {
+            "headers": {
+                "Content-Type": "text/javascript; charset=UTF-8"
+            }
+        }
 	},
 	"POST": {
 		"/goapi/getUserWatermarks/": {
@@ -60,7 +112,7 @@
 			"headers": {
 				"Content-Type": "application/json"
 			},
-			"content": "{\"status\":\"\"}"
+			"content": "{\"status\":\"ok\",\"data\":[]}"
 		},
 		"/goapi/getMovieInfo/": {
 			"headers": {
@@ -70,9 +122,9 @@
 		},
 		"/api_v2/asset/get": {
 			"headers": {
-				"Content-Type": "text/html; charset=UTF-8"
+				"Content-Type": "application/json"
 			},
-			"content": "1"
+			"content": "{\"status\":\"ok\",\"data\":[]}"
 		},
 		"/goapi/rebuildTTS/": {
 			"headers": {
@@ -91,6 +143,35 @@
 				"Content-Type": "text/html; charset=UTF-8"
 			},
 			"content": "1"
+		},
+		"/api_v2/text_component/get_list": {
+			"headers": {
+				"Content-Type": "application/json"
+			},
+			"content": "{\"status\":\"ok\",\"data\":[]}"
+		},
+		"/api_v2/text_component/add": {
+			"headers": {
+				"Content-Type": "application/json"
+			},
+			"content": "{\"status\":\"ok\",\"data\":[]}"
+		},
+		"/api_v2/assets/team": {
+			"headers": {
+				"Content-Type": "application/json"
+			},
+			"content": "{\"status\":\"ok\",\"data\":[]}"
+		},
+		"/api_v2/assets/shared": {
+			"headers": {
+				"Content-Type": "application/json"
+			},
+			"content": "{\"status\":\"ok\",\"data\":[]}"
+		},
+		"/pages/html/list.html": {
+			"headers": {
+				"Location": "/pages/html/list.html"
+			}
 		}
 	},
 	"pages": {
