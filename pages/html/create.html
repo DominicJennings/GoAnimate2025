@@ -36,16 +36,16 @@
 
 <header>
 	<a href="/">
-		<h1 style="margin:0"><img id="logo" src="../img/list_logo.png" alt="GoAnimate"></h1>
+		<h1 style="margin:0"><img id="logo" src="../img/list_logo.png" alt="GoAnimate"/></h1>
 	</a>
 	<nav id="headbuttons">
-		<a class="button_small" id="back" onclick="creationType()" style="display: none;">BACK</a>
+		<a class="button_small" id="back" onclick="creationType()" style="display: none">BACK</a>
 	</nav>
 </header>
 
 <main>
 	
-<div id="creation_type" style="display: block;">
+<div id="creation_type" style="display: unset">
 	<h1>Pick a creation to continue.</h1>
 
 	<div id="column1">
@@ -87,7 +87,7 @@
 				<p>Anime</p>
 			</a>
 		</div>
-	</div><br>
+	</div><br />
 
 	<div id="column3">
 		<div class="theme">
@@ -108,7 +108,7 @@
 				<p>Chibi Peepz</p>
 			</a>
 		</div>
-	</div><br>
+	</div><br />
 
 	<div id="column4">
 		<div class="theme">
@@ -117,67 +117,67 @@
 				<p>Chibi Ninjas</p>
 			</a>
 		</div>
-	</div><br>
+	</div><br />
 
 	<h2>Licensed themes</h2>
 	<div id="column8">
 		<div class="theme">
 			<a href="/cc_browser?themeId=botdf">
-				<img src="../img/themelist/botdf.jpg" alt="Blood on the Dance Floor™">
-				<div>Blood on the Dance Floor™</div>
+				<img src="../img/themelist/botdf.jpg" alt="Blood on the Dance Floor&#8482;">
+				<div>Blood on the Dance Floor&#8482;</div>
 			</a>
 		</div>
 		<div class="theme">
 			<a href="/cc_browser?themeId=cctoonadv">
-				<img src="../img/themelist/Toon_Adventure.png" alt="Toon Adventure™">
-				<p>Toon Adventure™</p>
+				<img src="../img/themelist/Toon_Adventure.png" alt="Toon Adventure&#8482;">
+				<p>Toon Adventure&#8482;</p>
 			</a>
 		</div>
-	</div><br>
+	</div><br />
 
 	<h2>Business Themes (NO CHARACTER BROWSER)</h2>
 	<div id="column8">
 		<div class="theme">
-			<a href="/cc?themeId=business&amp;bs=default">
+			<a href="/cc?themeId=business&bs=default">
 				<img src="../img/themelist/BusyAdults.png" alt="Business Adult">
 				<div>Business Adult</div>
 			</a>
 		</div>
 		<div class="theme">
-			<a href="/cc?themeId=business&amp;bs=kid">
+			<a href="/cc?themeId=business&bs=kid">
 				<img src="../img/themelist/BusyChildren.png" alt="Business Kid">
 				<p>Business Kid</p>
 			</a>
 		</div>
 		<div class="theme">
-			<a href="/cc?themeId=whiteboard&amp;bs=default">
+			<a href="/cc?themeId=whiteboard&bs=default">
 				<img src="../img/themelist/whiteman.png" alt="Whiteboard Adult">
 				<p>Whiteboard Adult</p>
 			</a>
 		</div>
-	</div><br>
+	</div><br />
 	<div id="column8">
 		<div class="theme">
-			<a href="/cc?themeId=whiteboard&amp;bs=kid">
+			<a href="/cc?themeId=whiteboard&bs=kid">
 				<img src="../img/themelist/whitegirl.png" alt="Whiteboard Adult">
 				<div>Whiteboard Kid</div>
 			</a>
 		</div>
 		<div class="theme">
-			<a href="/cc?themeId=infographics&amp;bs=">
+			<a href="/cc?themeId=infographics&bs=">
 				<img src="../img/themelist/AMONGUS.png" alt="Infographics">
 				<p>Video Infographics</p>
 			</a>
 		</div>
-	</div><br>
+	</div><br />
 	
-	<a id="credits_button" onclick="showCredits()" class="button_small" style="display: none;">Show credits</a><br>
-	<p id="credits" style="display: block;">
-	Blood On The Dance Floor © Dark Fantasy Records<br>
-	Toon Adventure © The Cartoon Network, Inc., A WarnerMedia Company</p>
+	<a id="credits_button" onclick="showCredits()" class="button_small">Show credits</a><br />
+	<p id="credits" style="display:none">
+	Blood On The Dance Floor &copy; Dark Fantasy Records<br />
+	Toon Adventure &copy; The Cartoon Network, Inc., A WarnerMedia Company</p>
 </div>
 
-<div id="movie_themes" style="display: none;">
+<div id="movie_themes" style="display: none">
 	<h1>Select a theme for your movie</h1>
 	
 	<h2>Standard themes</h2>
@@ -188,7 +188,7 @@
 				<p>Business Friendly</p>
 			</a>
 		</div>
-	</div><br>
+	</div><br />
 
 	<div id="column1">
 		<div class="theme">
@@ -209,7 +209,7 @@
 				<p>Cartoon Classics</p>
 			</a>
 		</div>
-	</div><br>
+	</div><br />
 
 	<div id="column2">
 		<div class="theme">
@@ -230,7 +230,7 @@
 				<p>Anime</p>
 			</a>
 		</div>
-	</div><br>
+	</div><br />
 
 	<div id="column3">
 		<div class="theme">
@@ -251,7 +251,7 @@
 				<p>Chibi Peepz</p>
 			</a>
 		</div>
-	</div><br>
+	</div><br />
 
 	<div id="column4">
 		<div class="theme">
@@ -272,7 +272,7 @@
 				<p>Space Peepz</p>
 			</a>
 		</div>
-	</div><br>
+	</div><br />
 
 	<div id="column5">
 		<div class="theme">
@@ -283,8 +283,8 @@
 		</div>
 		<div class="theme">
 			<a href="/go_full?tray=politic">
-				<img src="../img/themelist/Politics_and_Celebrity.png" alt="Politics &amp; Celebrity">
-				<div>Politics &amp; Celebrity</div>
+				<img src="../img/themelist/Politics_and_Celebrity.png" alt="Politics & Celebrity">
+				<div>Politics & Celebrity</div>
 			</a>
 		</div>
 		<div class="theme">
@@ -293,7 +293,7 @@
 				<p>Business Models</p>
 			</a>
 		</div>
-	</div><br>
+	</div><br />
 
 	<div id="column7">
 		<div class="theme">
@@ -302,14 +302,14 @@
 				<p>Stickly Business</p>
 			</a>
 		</div>
-	</div><br>
+	</div><br />
 
 	<h2>Seasonal themes</h2>
 	<div id="column8">
 		<div class="theme">
 			<a href="/go_full?tray=christmas">
-				<img src="../img/themelist/Holiday_and_Seasonal.png" alt="Holiday &amp; Seasonal">
-				<div>Holiday &amp; Seasonal</div>
+				<img src="../img/themelist/Holiday_and_Seasonal.png" alt="Holiday & Seasonal">
+				<div>Holiday & Seasonal</div>
 			</a>
 		</div>
 		<div class="theme">
@@ -318,92 +318,92 @@
 				<div>Monsters Mayhem</div>
 			</a>
 		</div>
-	</div><br>
+	</div><br />
 
 	<h2>Licensed themes</h2>
 	<div id="column9">
 		<div class="theme">
 			<a href="/go_full?tray=akon">
-				<img src="../img/themelist/Akon.jpg" alt="AKON™">
-				<p>AKON™</p>
+				<img src="../img/themelist/Akon.jpg" alt="AKON&#8482;">
+				<p>AKON&#8482;</p>
 			</a>
 		</div>
 		<div class="theme">
 			<a href="/go_full?tray=ben10">
-				<img src="../img/themelist/Ben_10.png" alt="Ben 10™">
-				<p>Ben 10™</p>
+				<img src="../img/themelist/Ben_10.png" alt="Ben 10&#8482;">
+				<p>Ben 10&#8482;</p>
 			</a>
 		</div>
 		<div class="theme">
 			<a href="/go_full?tray=botdf">
-				<img src="../img/themelist/botdf.jpg" alt="Blood on the Dance Floor™">
-				<div>Blood on the Dance Floor™</div>
+				<img src="../img/themelist/botdf.jpg" alt="Blood on the Dance Floor&#8482;">
+				<div>Blood on the Dance Floor&#8482;</div>
 			</a>
 		</div>
-	</div><br>
+	</div><br />
 
 	<div id="column10">
 		<div class="theme">
 			<a href="/go_full?tray=bunny">
-				<img src="../img/themelist/Happy_Bunny.png" alt="It's Happy Bunny™">
-				<div>It's Happy Bunny™</div>
+				<img src="../img/themelist/Happy_Bunny.png" alt="It's Happy Bunny&#8482;">
+				<div>It's Happy Bunny&#8482;</div>
 			</a>
 		</div>
 		<div class="theme">
 			<a href="/go_full?tray=chowder">
-				<img src="../img/themelist/Chowder.png" alt="Chowder™">
-				<div>Chowder™</div>
+				<img src="../img/themelist/Chowder.png" alt="Chowder&#8482;">
+				<div>Chowder&#8482;</div>
 			</a>
 		</div>
 		<div class="theme">
 			<a href="/go_full?tray=domo">
-				<img src="../img/themelist/Domo.png" alt="Domo™">
-				<div>Domo™</div>
+				<img src="../img/themelist/Domo.png" alt="Domo&#8482;">
+				<div>Domo&#8482;</div>
 			</a>
 		</div>
-	</div><br>
+	</div><br />
 
 	<div id="column11">
 		<div class="theme">
 			<a href="/go_full?tray=monkeytalk">
-				<img src="../img/themelist/SuperRica___Rashy.png" alt="SuperRica &amp; Rashy™">
-				<div>SuperRica &amp; Rashy™</div>
+				<img src="../img/themelist/SuperRica___Rashy.png" alt="SuperRica & Rashy&#8482;">
+				<div>SuperRica & Rashy&#8482;</div>
 			</a>
 		</div>
 		<div class="theme">
 			<a href="/go_full?tray=sf">
-				<img src="../img/themelist/Street_Fighter.png" alt="Street Fighter™">
-				<div>Street Fighter™</div>
+				<img src="../img/themelist/Street_Fighter.png" alt="Street Fighter&#8482;">
+				<div>Street Fighter&#8482;</div>
 			</a>
 		</div>
 		<div class="theme">
 			<a href="//go_full?tray=startrek">
-				<img src="../img/themelist/Star_Trek_Quags.JPG" alt="Star Trek™ Quogs">
-				<div>Star Trek™ Quogs</div>
+				<img src="../img/themelist/Star_Trek_Quags.JPG" alt="Star Trek&#8482; Quogs">
+				<div>Star Trek&#8482; Quogs</div>
 			</a>
 		</div>
-	</div><br>
+	</div><br />
 
 	<div id="column12">
 		<div class="theme">
 			<a href="/go_full?tray=toonadv">
-				<img src="../img/themelist/Toon_Adventure.png" alt="Toon Adventure™">
-				<p>Toon Adventure™</p>
+				<img src="../img/themelist/Toon_Adventure.png" alt="Toon Adventure&#8482;">
+				<p>Toon Adventure&#8482;</p>
 			</a>
 		</div>
 		<div class="theme">
 			<a href="/go_full?tray=underdog">
-				<img src="../img/themelist/UnderDog.png" alt="Underdog™">
-				<p>Underdog™</p>
+				<img src="../img/themelist/UnderDog.png" alt="Underdog&#8482;">
+				<p>Underdog&#8482;</p>
 			</a>
 		</div>
 		<div class="theme">
 			<a href="/go_full?tray=willie">
-				<img src="../img/themelist/Willie_Nelson.jpg" alt="Willie Nelson™">
-				<p>Willie Nelson™</p>
+				<img src="../img/themelist/Willie_Nelson.jpg" alt="Willie Nelson&#8482;">
+				<p>Willie Nelson&#8482;</p>
 			</a>
 		</div>
-	</div><br>
+	</div><br />
 
 	<h2>Developer themes</h2>
 	<div class="theme">
@@ -411,24 +411,23 @@
 			<img src="../img/themelist/Street.png" alt="Street">
 			<p>Street</p>
 		</a>
-	</div>
-	<br>
-	<p>The developer themes were made during the early days of the original LVM, and there's hardly anything in them.</p><br>
+	</div><br />
+	<p>The developer themes were made during the early days of the original LVM, and there's hardly anything in them.</p><br />
 
-	<a id="show-credits" onclick="showCredits()" class="button_small">Show credits</a><br>
-	<p id="credits" style="display:none">AKON © Akonik Label Group/BMG/Republic Records<br>
-	Ben 10 © The Cartoon Network, Inc., A WarnerMedia Company<br>
-	Blood On The Dance Floor © Dark Fantasy Records<br>
-	It's Happy Bunny © Jim Benton<br>
-	Chowder © The Cartoon Network Inc., A WarnerMedia Company<br>
-	Domo © NHK<br>
-	SuperRica &amp; Rashy © Dark Horse Comics<br>
-	Street Fighter © CAPCOM<br>
-	Star Trek © ViacomCBS<br>
-	Toon Adventure © The Cartoon Network, Inc., A WarnerMedia Company<br>
-	Underdog © DreamWorks Classics<br>
-	Willie Nelson © RCA Records/Atlantic Records/Columbia Records<br>
-</p></div>
+	<a id="show-credits" onclick="showCredits()" class="button_small">Show credits</a><br />
+	<p id="credits" style="display:none">AKON &copy; Akonik Label Group/BMG/Republic Records<br />
+	Ben 10 &copy; The Cartoon Network, Inc., A WarnerMedia Company<br />
+	Blood On The Dance Floor &copy; Dark Fantasy Records<br />
+	It's Happy Bunny &copy; Jim Benton<br />
+	Chowder &copy; The Cartoon Network Inc., A WarnerMedia Company<br />
+	Domo &copy; NHK<br />
+	SuperRica & Rashy &copy; Dark Horse Comics<br />
+	Street Fighter &copy; CAPCOM<br />
+	Star Trek &copy; ViacomCBS<br />
+	Toon Adventure &copy; The Cartoon Network, Inc., A WarnerMedia Company<br />
+	Underdog &copy; DreamWorks Classics<br />
+	Willie Nelson &copy; RCA Records/Atlantic Records/Columbia Records<br />
+</div>
 
 </main>
 
